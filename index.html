@@ -478,6 +478,8 @@
 <style>
   .v5x .hline { top:24%; }
   .v5x .trk { bottom:13%; }
+  .v5x .screen { overflow:visible; } /* overflow:hidden on an ancestor breaks position:sticky on .pin */
+  @media (min-width:900px){ .v5x .trk { width:min(1500px,115vw); } } /* desktop: whole truck fits on screen while it crosses */
   #bar a { white-space:nowrap; }
   @media (max-width:700px){
     .v5x .hline { top:21%; }
